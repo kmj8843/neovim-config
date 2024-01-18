@@ -60,6 +60,16 @@ M.nvimtree = {
       },
     },
   },
+
+  filters = {
+    git_ignored = false,
+    dotfiles = false,
+    git_clean = false,
+    no_buffer = false,
+    no_bookmark = false,
+    custom = {},
+    exclude = {},
+  },
 }
 
 return M
