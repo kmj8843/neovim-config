@@ -81,6 +81,7 @@ local plugins = {
   },
 
   -- https://github.com/jesseduffield/lazygit
+  -- https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md
   {
     "kdheepak/lazygit.nvim",
     dependencies = {
