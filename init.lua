@@ -6,9 +6,19 @@
 --   command = "tabdo wincmd =",
 -- })
 
--- locale
 os.setlocale "en_US.UTF-8"
--- os.setlocale "ko_KR.UTF-8"
+
+vim.opt.listchars = {
+  nbsp = "⦸",
+  extends = "»",
+  precedes = "«",
+  tab = "▷─",
+  trail = "~",
+  space = "⋅",
+  eol = "↵",
+}
+vim.opt.list = true
+vim.o.exrc = true
 
 vim.api.nvim_create_user_command("FormatDisable", function(args)
   if args.bang then
@@ -40,4 +50,10 @@ vim.api.nvim_create_user_command("FormatStatus", function()
   require("lazy.util").info(message, { title = "conform.nvim", lang = "markdown" })
 end, {
   desc = "Print autoformat-on-save status",
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    require("lazygit.utils").project_root_dir()
+  end,
 })

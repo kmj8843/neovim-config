@@ -60,8 +60,7 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
-  -- lazy.nvim
-  -- https://github.com/folke/noice.nvim
+
   {
     "folke/noice.nvim",
     event = "VeryLazy",
@@ -78,6 +77,18 @@ local plugins = {
     },
     config = function()
       require "custom.configs.noice"
+    end,
+  },
+
+  -- https://github.com/jesseduffield/lazygit
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("telescope").load_extension "lazygit"
     end,
   },
 }
