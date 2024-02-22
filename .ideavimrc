@@ -76,6 +76,7 @@ nmap <leader>wf <Action>(ToggleFullScreen)
 nmap <leader>ws <Action>(ToggleDistractionFreeMode)
 nmap <leader>wh <Action>(HideAllWindows)
 nmap <leader>wd <Action>(ActivateDebugToolWindow)
+nmap <leader>ww <Action>(MoveEditorToOppositeTabGroup)
 
 nmap <leader>w1 <Action>(GoToTab1)
 nmap <leader>w2 <Action>(GoToTab2)
