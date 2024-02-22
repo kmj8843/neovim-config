@@ -72,6 +72,10 @@ nmap <leader>xp <Action>(CloseAllUnpinnedEditors)
 " window
 nmap <leader>wp <Action>(PinActiveEditorTab)
 nmap <leader>wl <Action>(TabList)
+nmap <leader>wf <Action>(ToggleFullScreen)
+nmap <leader>wd <Action>(ToggleDistractionFreeMode)
+nmap <leader>wh <Action>(HideAllWindows)
+nmap <leader>wd <Action>(ActivateDebugToolWindow)
 
 nmap <leader>w1 <Action>(GoToTab1)
 nmap <leader>w2 <Action>(GoToTab2)
